@@ -4,7 +4,11 @@ version = "0.1.0"
 description = "Compare token usage, response time, and API costs between Gemini and Groq"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "google-genai>=3.6.1",
+    "groq>=1.7.0",
+    "python-dotenv>=1.2.4",
+]
 
 [project.scripts]
 two-provider-cost-tracker = "two_provider_cost_tracker:main"
